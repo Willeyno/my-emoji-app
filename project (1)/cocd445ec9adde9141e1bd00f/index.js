@@ -2,7 +2,7 @@ const myEmojis = ["👨‍💻", "⛷", "🍲"]
 
 function renderEmojis() {
     const emojiContainer = document.getElementById("emoji-container")
-    emojiContainer.innerHTML = ""
+    emojiContainer.innerHTML = "😊👍👋❤️"
     for (let i = 0; i < myEmojis.length; i++) {
         const emoji = document.createElement('span')
         emoji.textContent = myEmojis[i]
@@ -20,7 +20,7 @@ pushBtn.addEventListener("click", function(){
         emojiInput.value = ""
         renderEmojis()
     }
-}) 
+})
 
 const unshiftBtn = document.getElementById("unshift-btn")
 unshiftBtn.addEventListener("click", function(){
